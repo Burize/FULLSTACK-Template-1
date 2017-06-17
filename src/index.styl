@@ -1,10 +1,9 @@
 @import "./Portrait/portrait.styl"
-@import "./Components/Circle/circle.styl"
 @import "./Profile/profile.styl"
-@import "./Components/Profile-icon/profile-icon.styl"
 @import "./Contact/contact.styl"
-
 @import "./Skills/skills.styl"
+@import "./CSS-components/point-list.styl"
+@import "./Software/software.styl"
 
  @font-face {
     font-family: MPLightSemiExt;
@@ -24,6 +23,7 @@
        margin 0;
        padding 0;
        padding-top 0.2em;
+       font-size 16px;
    }
 
 .container{
@@ -31,25 +31,152 @@
     width 1220px;
     margin: auto
     margin-bottom 3em;
+     padding-top: 5.5%;
+    display flex;
+    justify-content space-between;
+    
+    .container-left{
+        width 40%;
+    
+    }
+    
+    .container-right            
+    {
+        width 56.3%; 
+       
+    }
+
+        .portrait{
+            padding-top: 3.5%;
+            max-width:96%;
+            margin-bottom 18%;
+        }
+
+        .profile{
+
+            max-width: 92.5%;
+            margin-bottom 11%;
+        }
+
+        .contact{
+             max-width: 92.5%;
+              margin-bottom 7.5%;
+        }
+
+        .skills{
+             max-width: 92.5%;
+        }
+
+        .education{
+           
+            max-width 100%;
+             margin-bottom 8.5%;
+        }
+        
+        .experience{
+            
+            margin-bottom 8%;
+            
+            .title{
+                margin-bottom 2.1em;
+            }
+            
+            .point-list-row__title span{
+                
+                color black !important; 
+            }
+        }
+
+
+
 }
 
-.portrait{
- 
-    max-width:39%;
-    margin-bottom 5.4em;
+
+
+@media screen and (max-width: 1240px){
+    html, body{
+        
+        font-size:15px !important;
+    }
+    
+    .container{
+        
+        width: 1100;
+    }
 }
 
-.profile{
-   
-    max-width: 37%;
-    margin-bottom 3em;
+
+
+@media screen and (max-width: 1120px){
+    html, body{
+        
+        font-size:13px !important;
+    }
+    
+    .container{
+        
+        width: 1000;
+    }
 }
 
-.contact{
-     max-width: 37%;
-      margin-bottom 2.3em;
+@media screen and (max-width: 1020px){
+    html, body{
+        
+        font-size:12px !important;
+    }
+    
+    .container{
+        
+        width: 900;
+    }
 }
 
-.skills{
-     max-width: 37%;
+
+@media screen and (max-width: 920px){
+    html, body{
+        
+        font-size:11px !important;
+    }
+    
+    .container{
+        
+        width: 815;
+    }
+}
+
+
+@media screen and (max-width: 830px){
+    html, body{
+        
+        font-size:10px !important;
+    }
+    
+    .container{
+        
+        width: 730;
+    }
+}
+
+@media screen and (max-width: 750px){
+    html, body{
+        
+        font-size:9px !important;
+    }
+    
+    .container{
+        
+        width: 660;
+    }
+}
+
+@media screen and (max-width: 690px){
+    html, body{
+        
+        font-size:8px !important;
+    }
+    
+    .container{
+        
+        width: 610;
+    }
 }

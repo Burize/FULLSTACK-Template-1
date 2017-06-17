@@ -2,14 +2,14 @@
 <html>
   <head></head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="initial-sclae-1.0, width=device-width"/>
   <title>Webpack app</title>
   <body>
     <div class="container">
+      <section class="container-left">
 <article class="portrait">
-<div class="circle">
-  <div class="circle__inner">
-    <svg class="circle-svg">
+<div class="circle icon">
+  <div class="circle__inner icon__inner">
+    <svg class="circle-svg icon-svg">
       <circle cx="50%" cy="50%" r="50%" fill="#3d6cb0"></circle>
       <circle cx="50%" cy="50%" r="47%" fill="#3d6cb0" stroke="white" stroke-width="5%"></circle>
     </svg>
@@ -22,8 +22,8 @@
 <article class="profile">
   <section class="title">
 <div class="profile-icon icon">
-  <div class="profile-icon__inner">
-    <svg class="profile-icon-svg" viewbox=" 0 0 100 100">
+  <div class="profile-icon__inner icon__inner">
+    <svg class="profile-icon-svg icon-svg" viewbox=" 0 0 100 100">
       <circle cx="50%" cy="50%" r="50%" fill="#3d6cb0"></circle>
       <circle cx="50%" cy="50%" r="47%" fill="#3d6cb0" stroke="white" stroke-width="5%"></circle>
       <circle cx="50%" cy="42%" r="12%" fill="white"></circle>
@@ -40,13 +40,14 @@
 </article>
 <article class="contact">
   <section class="title">
-<div class="profile-icon icon">
-  <div class="profile-icon__inner">
-    <svg class="profile-icon-svg" viewbox=" 0 0 100 100">
+<div class="phone-icon icon">
+  <div class="phone-icon__inner icon__inner">
+    <svg class="phone-icon-svg icon-svg" viewbox=" 0 0 100 100">
       <circle cx="50%" cy="50%" r="50%" fill="#3d6cb0"></circle>
       <circle cx="50%" cy="50%" r="47%" fill="#3d6cb0" stroke="white" stroke-width="5%"></circle>
-      <circle cx="50%" cy="42%" r="12%" fill="white"></circle>
-      <path fill="white" d="M50,72 L28,72 A20,20 0 0,1 72,72 z"></path>
+    </svg>
+    <svg class="phone-icon-svg__inner icon-svg__inner" viewbox=" 0 0 100 100">
+      <path fill="white" d="M90.1,75.1l-0.5-1c-1.4-3.3-18.6-8.3-20-8.4l-1.1,0.1c-2.1,0.4-4.4,2.3-8.9,6.2c-0.9,0.8-2.1,1-3.2,0.4  c-5.9-3.3-13.1-9.9-16.7-13.9c-3.9-4.3-8.6-11.4-10.8-17.1c-0.4-1.1,0-2.3,0.8-3.1c5.1-4.6,7.3-6.8,7.5-9.2c0.1-1.4-2.9-19.1-6-20.8  l-0.9-0.6c-2-1.3-5-3.2-8.3-2.5c-0.8,0.2-1.6,0.5-2.3,0.9C17.5,7.5,12,11.3,9.5,16.2C8,19.3,7.3,47.4,28.3,71.1  c20.8,23.5,46.5,24.5,50.3,23.7l0.1,0l0.3-0.1c5.2-1.9,9.6-6.8,11.3-8.9C93.4,82.1,91.3,77.6,90.1,75.1z"></path>
     </svg>
   </div>
 </div>
@@ -75,8 +76,8 @@
 <article class="skills">
   <section class="title">
 <div class="profile-icon icon">
-  <div class="profile-icon__inner">
-    <svg class="profile-icon-svg" viewbox=" 0 0 100 100">
+  <div class="profile-icon__inner icon__inner">
+    <svg class="profile-icon-svg icon-svg" viewbox=" 0 0 100 100">
       <circle cx="50%" cy="50%" r="50%" fill="#3d6cb0"></circle>
       <circle cx="50%" cy="50%" r="47%" fill="#3d6cb0" stroke="white" stroke-width="5%"></circle>
       <circle cx="50%" cy="42%" r="18%" fill="white" stroke="white" stroke-width="5%"></circle>
@@ -159,6 +160,129 @@
     </section>
   </section>
 </article>
+      </section>
+      <section class="container-right">
+<article class="point-list education">
+  <section class="title">
+<div class="star-icon icon">
+  <div class="star-icon__inner icon__inner">
+    <svg class="star-icon-svg icon-svg" viewbox=" 0 0 100 100">
+      <circle cx="50%" cy="50%" r="50%" fill="#3d6cb0"></circle>
+      <circle cx="50%" cy="50%" r="47%" fill="#3d6cb0" stroke="white" stroke-width="5%"></circle>
+      <polyline fill="white" points="49,14 70,82 14,42 86,42 29,82 50,10"></polyline>
+    </svg>
+  </div>
+</div>
+    <h3 class="title__text">education</h3>
+    <div class="title__line"></div>
+  </section>
+  <section class="point-list-row">
+    <h4 class="point-list-row__title"><span>master degree </span> // Feb 2011 - Jun 2014</h4>
+    <h4 class="point-list-row__under-title">university name</h4>
+    <p class="point-list-row__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+  </section>
+  <section class="point-list-row">
+    <h4 class="point-list-row__title"><span>master degree </span> // Feb 2011 - Jun 2014</h4>
+    <h4 class="point-list-row__under-title">university name</h4>
+    <p class="point-list-row__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+  </section>
+  <section class="point-list-row">
+    <h4 class="point-list-row__title"><span>master degree </span> // Feb 2011 - Jun 2014</h4>
+    <h4 class="point-list-row__under-title">university name</h4>
+    <p class="point-list-row__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+  </section>
+  <section class="point-list-row">
+    <h4 class="point-list-row__title"><span>master degree </span> // Feb 2011 - Jun 2014</h4>
+    <h4 class="point-list-row__under-title">university name</h4>
+    <p class="point-list-row__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+  </section>
+</article>
+<article class="point-list experience">
+  <section class="title">
+<div class="suitcase-icon icon">
+  <div class="suitcase-icon icon__inner">
+    <svg class="suitcase-icon-svg icon-svg">
+      <circle cx="50%" cy="50%" r="50%" fill="#3d6cb0"></circle>
+      <circle cx="50%" cy="50%" r="47%" fill="#3d6cb0" stroke="white" stroke-width="5%"></circle>
+      <circle cx="50%" cy="40%" r="12%" fill="#3d6cb0" stroke="white" stroke-width="4%"></circle>
+      <rect x="24%" y="40%" width="52%" height="37%" fill="white"></rect>
+    </svg>
+  </div>
+</div>
+    <h3 class="title__text">experience</h3>
+    <div class="title__line"></div>
+  </section>
+  <section class="point-list-row">
+    <h4 class="point-list-row__title"><span>company name </span> // Feb 2011 - Jun 2014</h4>
+    <h4 class="point-list-row__under-title">your job here</h4>
+    <p class="point-list-row__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+  </section>
+  <section class="point-list-row">
+    <h4 class="point-list-row__title"><span>company name </span> // Feb 2011 - Jun 2014</h4>
+    <h4 class="point-list-row__under-title">your job here</h4>
+    <p class="point-list-row__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+  </section>
+  <section class="point-list-row">
+    <h4 class="point-list-row__title"><span>company name </span> // Feb 2011 - Jun 2014</h4>
+    <h4 class="point-list-row__under-title">your job here</h4>
+    <p class="point-list-row__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+  </section>
+</article>
+<article class="software">
+  <section class="title">
+<div class="computer-icon icon">
+  <div class="computer-icon icon__inner">
+    <svg class="computer-icon-svg icon-svg" viewbox=" 0 0 100 100">
+      <circle cx="50%" cy="50%" r="50%" fill="#3d6cb0"></circle>
+      <circle cx="50%" cy="50%" r="47%" fill="#3d6cb0" stroke="white" stroke-width="5%"></circle>
+      <rect x="28%" y="30%" width="44%" height="28%" fill="#3d6cb0" stroke="white" stroke-width="4%" rx="3%"></rect>
+      <polyline fill="white" points="22,72 26,64 74,64 78,72"></polyline>
+    </svg>
+  </div>
+</div>
+    <h3 class="title__text">software</h3>
+    <div class="title__line"></div>
+  </section>
+  <section class="software-skills">
+    <section class="software-skill">
+      <h4 class="software-skill__text">photoshop</h4>
+      <div class="load-bar">
+        <div class="load-bar__progress" style="width: 92%;"></div>
+      </div>
+    </section>
+    <section class="software-skill">
+      <h4 class="software-skill__text">dreamweaver</h4>
+      <div class="load-bar">
+        <div class="load-bar__progress" style="width: 82%;"></div>
+      </div>
+    </section>
+    <section class="software-skill">
+      <h4 class="software-skill__text">illustrator</h4>
+      <div class="load-bar">
+        <div class="load-bar__progress" style="width: 69.5%;"></div>
+      </div>
+    </section>
+    <section class="software-skill">
+      <h4 class="software-skill__text">after effects</h4>
+      <div class="load-bar">
+        <div class="load-bar__progress" style="width: 62%;"></div>
+      </div>
+    </section>
+    <section class="software-skill">
+      <h4 class="software-skill__text">indesign</h4>
+      <div class="load-bar">
+        <div class="load-bar__progress" style="width: 57%;"></div>
+      </div>
+    </section>
+    <section class="software-skill">
+      <h4 class="software-skill__text">html&css3</h4>
+      <div class="load-bar">
+        <div class="load-bar__progress" style="width: 90%;"></div>
+      </div>
+    </section>
+  </section>
+</article>
+      </section>
     </div>
   <script type="text/javascript" src="main.js"></script></body>
 </html>

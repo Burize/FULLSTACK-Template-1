@@ -2,11 +2,15 @@ doctype !html
 html
     head
     meta(charset = 'utf-8')
-    meta(name='viewport', content="initial-sclae-1.0, width=device-width")
     title Webpack app
     body
         div.container
-            include ./Portrait/portrait.pug
-            include ./Profile/profile.pug
-            include ./Contact/contact.pug
-            include ./Skills/skills.pug
+            section.container-left
+                include ./Portrait/portrait.pug
+                include ./Profile/profile.pug
+                include ./Contact/contact.pug
+                include ./Skills/skills.pug
+            section.container-right
+                include ./Education/education.pug
+                include ./Experience/experience.pug
+                include ./Software/software.pug
