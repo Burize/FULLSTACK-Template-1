@@ -1,0 +1,8 @@
+mixin Point-list__row(title , date, under_title, text)
+    section.point-list-row
+        h4.point-list-row__title
+            span!= title
+            | // 
+            !=date
+        h4.point-list-row__under-title!= under_title
+        p.point-list-row__text!= text

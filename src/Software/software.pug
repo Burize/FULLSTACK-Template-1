@@ -1,30 +1,13 @@
+include ./software-skill.pug
 article.software
      section.title
         include ../Icons/computer-icon.pug
         h3.title__text software
         div.title__line
      section.software-skills
-        section.software-skill
-            h4.software-skill__text photoshop
-            div.load-bar
-                div( style="width: 92%;").load-bar__progress
-        section.software-skill
-            h4.software-skill__text dreamweaver
-            div.load-bar
-                div( style="width: 82%;").load-bar__progress
-        section.software-skill
-            h4.software-skill__text illustrator
-            div.load-bar
-                div( style="width: 69.5%;").load-bar__progress
-        section.software-skill
-            h4.software-skill__text after effects
-            div.load-bar
-                div( style="width: 62%;").load-bar__progress
-        section.software-skill
-            h4.software-skill__text indesign
-            div.load-bar
-                div( style="width: 57%;").load-bar__progress
-        section.software-skill
-            h4.software-skill__text html&css3
-            div.load-bar
-                div( style="width: 90%;").load-bar__progress
+        +Software-skill('photoshop',92)
+        +Software-skill('dreamweaver', 82)
+        +Software-skill('illustrator', 69.5)
+        +Software-skill('after effects', 62)
+        +Software-skill('indesign', 57)
+        +Software-skill('html&css3', 90)

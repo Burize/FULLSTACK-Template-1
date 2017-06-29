@@ -1,66 +1,11 @@
+include ./skill-points.pug
 article.skills
     section.title
         include ../Icons/skills-icon.pug
         h3.title__text skills
         div.title__line
     section.skills-body
-        section.skills-body-row
-            h2.skills-body-row__text creative
-            div.skills-body-row__points
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point
-                div.skills-body-row__point
-                div.skills-body-row__point
-        section.skills-body-row
-            h2.skills-body-row__text teamwork
-            div.skills-body-row__points
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point
-        section.skills-body-row
-            h2.skills-body-row__text innovate
-            div.skills-body-row__points
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point
-                div.skills-body-row__point
-                div.skills-body-row__point
-                div.skills-body-row__point
-                div.skills-body-row__point
-                div.skills-body-row__point
-        section.skills-body-row
-            h2.skills-body-row__text communication
-            div.skills-body-row__points
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point.skills-body-row__point_active
-                div.skills-body-row__point
+        +Skill-points('creative', 9, 12)
+        +Skill-points('teamwork', 11, 12)
+        +Skill-points('innovate', 6, 12)
+        +Skill-points('communication', 11, 12)

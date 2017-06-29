@@ -1,0 +1,9 @@
+mixin Skill-points(titile ,active, all)
+    section.skills-body-row
+        h2.skills-body-row__text!=titile
+        div.skills-body-row__points
+            - var i = 0
+            while i++ < active
+                div.skills-body-row__point.skills-body-row__point_active
+            while i++ <= all 
+                div.skills-body-row__point
