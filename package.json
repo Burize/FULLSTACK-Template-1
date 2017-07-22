@@ -37,6 +37,7 @@
     "style-loader": "*",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
+    "svg-url-loader": "^2.1.1",
     "url-loader": "^0.5.8",
     "webpack": "*",
     "webpack-dev-server": "^2.4.1"
