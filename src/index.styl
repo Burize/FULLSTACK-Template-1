@@ -1,98 +1,56 @@
+ @font-face {
+    font-family: "Myriad Pro";
+    src:  url('./Fonts/MyriadPro-lightsemiext.woff') format('woff'), 
+          url('./Fonts/MyriadPro-lightsemiext.ttf')  format('truetype'),
+          url('./Fonts/MyriadPro-lightsemiext.svg#MyriadPro') format('svg');
+    font-style normal;
+    font-weight 300;
+   }
+ @font-face {
+    font-family: "Myriad Pro";
+    src: url('./Fonts/MyriadPro-bold.woff') format('woff'), 
+         url('./Fonts/MyriadPro-bold.ttf')  format('truetype');
+    font-style normal;
+    font-weight 700;
+   }
+
+ @font-face {
+    font-family: "Myriad Pro";
+    src: url('./Fonts/MyriadPro-Regular.woff') format('woff'), 
+         url('./Fonts/MyriadPro-Regular.ttf')  format('truetype');
+    font-style normal;
+    font-weight 500;
+   }
+   
+color_blue = #3d6cb0;
+color_gray = #e6e6e6;
+
 @import "./Portrait/portrait.styl"
 @import "./Profile/profile.styl"
 @import "./Contact/contact.styl"
 @import "./Skills/skills.styl"
-@import "./CSS-components/point-list.styl"
 @import "./Software/software.styl"
+@import "./Point-list/point-list.styl"
+@import  "../title/title.styl"
+@import "../Icons/icon.styl"
 
- @font-face {
-    font-family: MPLightSemiExt;
-    src: url(./Fonts/MyriadPro-LightSemiExt.ttf); 
-   }
- @font-face {
-    font-family: MPBold;
-    src: url(./Fonts/MyriadPro-Bold.ttf); 
-   }
 
- @font-face {
-    font-family: MPRegular;
-    src: url(./Fonts/MyriadPro-Regular.ttf); 
-   }
+   
+
+
+
 
    html, body{
        margin 0;
        padding 0;
        padding-top 0.2em;
        font-size 16px;
+       background-color white;
+       color black;
+       
    }
 
-.container{
    
-    width 1220px;
-    margin: auto
-    margin-bottom 3em;
-     padding-top: 5.5%;
-    display flex;
-    justify-content space-between;
-    
-    .container-left{
-        width 40%;
-    
-    }
-    
-    .container-right            
-    {
-        width 56.3%; 
-       
-    }
-
-        .portrait{
-            padding-top: 3.5%;
-            max-width:96%;
-            margin-bottom 18%;
-        }
-
-        .profile{
-
-            max-width: 92.5%;
-            margin-bottom 11%;
-        }
-
-        .contact{
-             max-width: 92.5%;
-              margin-bottom 7.5%;
-        }
-
-        .skills{
-             max-width: 92.5%;
-        }
-
-        .education{
-           
-            max-width 100%;
-             margin-bottom 8.5%;
-        }
-        
-        .experience{
-            
-            margin-bottom 8%;
-            
-            .title{
-                margin-bottom 2.1em;
-            }
-            
-            .point-list-row__title span{
-                
-                color black !important; 
-            }
-        }
-
-
-
-}
-
-
-
 @media screen and (max-width: 1240px){
     html, body{
         
@@ -180,3 +138,92 @@
         width: 610;
     }
 }
+   
+.container{
+   
+    width 1220px;
+    margin: auto
+    margin-bottom 3em;
+     padding-top: 5.5%;
+    display flex;
+    justify-content space-between;
+    
+    .container-left{
+        width 40%;
+        
+        
+        .portrait{
+            padding-top: 3.5%;
+            max-width:96%;
+            margin-bottom 18%;
+            font-size 3.58rem;
+        }
+
+        .profile{
+
+            max-width: 92.5%;
+            margin-bottom 11%;
+        }
+
+        .contact{
+             max-width: 92.5%;
+              margin-bottom 7.5%;
+              
+              .contact-body{
+                  
+                  font-size 1.2rem
+              }
+             
+        }
+
+        .skills{
+             max-width: 92.5%;
+             
+             .skills-body{
+                 
+                 font-size 1.2rem;
+             }
+        }
+    
+    }
+    
+    .container-right            
+    {
+        width 56.3%; 
+        
+         .education{
+           
+            max-width 100%;
+            margin-bottom 8.5%;
+            font-size 1.05rem;
+        }
+        
+        .experience{
+            
+            margin-bottom 8%;
+            font-size 1.05rem;
+            
+            .title{
+                margin-bottom 1.05em;
+            }
+            
+            .point-list-row__title span{
+                
+                color black; 
+            }
+        }
+        
+        
+        .software-skills{
+            
+            font-size 1.75rem;
+        }
+
+       
+    }
+
+
+
+}
+
+
