@@ -1,9 +1,7 @@
 include ../point-list/point-list.pug
 article.point-list.experience
      header.title
-        include ../Icons/suitcase-icon.pug
-        h3.title__text experience
-        div.title__line
+        +Title('experience', './Icons/suitcase.svg')
      +Point-list__row('company name', 'Feb 2011 - Jun 2014', 'your job here' ,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
      +Point-list__row('company name', 'Feb 2011 - Jun 2014', 'your job here' ,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
      +Point-list__row('company name', 'Feb 2011 - Jun 2014', 'your job here' ,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
