@@ -1,46 +1,31 @@
-
-
-.software{
+.software
     
-    .software-skills{
-        
-        display flex;
-        justify-content space-between;
-        flex-wrap wrap;
-        margin 0;
-        padding 0;
-        padding-left 1%;
-        padding-top 0.5em;
+    &-skills   
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        margin 0
+        padding 0
+        padding-left 1%
+        padding-top 0.5em
        
-        .software-skill{
+        .software-skill
             
-            width 44.5%;
-            margin-bottom 0.9em;
+            width 44.5%
+            margin-bottom 0.9em
             
-            .software-skill__text{
-            
-            font-family: "Myriad Pro", Arial, sans-serif;
-            font-style normal;
-            font-weight 500;
-            text-transform uppercase;
-           
-            margin 0;
-            margin-bottom 0.55em;
-            } 
-            
-            .load-bar{
-                
-                background-color: color_gray;
-                height 0.9em;
-                
-                
-                .load-bar__progress{
-                    background-color color_blue;
-                    height 100%;
-                    
-                }
-            }
-        }
-     
-    }
-}
+            &__text
+                font-family "Myriad Pro", Arial, sans-serif
+                font-style normal
+                font-weight 500
+                text-transform uppercase       
+                margin 0
+                margin-bottom 0.55em
+
+            .load-bar
+                background-color: color_gray
+                height 0.9em
+
+                &__progress
+                    background-color color_blue
+                    height 100%
