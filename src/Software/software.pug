@@ -1,9 +1,7 @@
 include ./software-skill.pug
 article.software
      header.title
-        include ../Icons/computer-icon.pug
-        h3.title__text software
-        div.title__line
+        +Title('software', './icons/computer.svg')
      section.software-skills
         +Software-skill('photoshop',92)
         +Software-skill('dreamweaver', 82)

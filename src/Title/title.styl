@@ -1,32 +1,39 @@
 color_blue = #3d6cb0;
 
-.title{
-       
-        display flex;
-        align-items center;
-        margin-bottom 0.4em;
-        font-size 2.25em;
+.title
+    display flex
+    align-items center
+    margin-bottom 0.4em
+    font-size 2.25em
         
-        .icon{
-            width 2.1em;
-            flex-shrink 0.1;
-            margin-right 0.5em;
-           
-        }
+    .icon
+        width 2.1em
+        flex-shrink 0.1
+        margin-right 0.5em
+                
+        .icon__inner
+            width 100%
+            padding-top 100%
+            position relative
+                
+            img
+                width 100%
+                height 100%
+                position absolute
+                top: 0
+                left 0    
+
         
-        .title__text{
-            color color_blue;
-            text-transform  uppercase;
-            font-family: "Myriad Pro", Arial, sans-serif;
-            font-style normal;
-            font-weight 700;
-            margin 0;
-            margin-right 0.2em;
-        }
+    &__text
+        color color_blue
+        text-transform  uppercase
+        font-family: "Myriad Pro", Arial, sans-serif
+        font-style normal
+        font-weight 700
+        margin 0
+        margin-right 0.2em
         
-        .title__line{
-            border solid color_blue 2px;
-            width 70%;
-            flex-shrink 50;
-        }
-    }
+    &__line
+        border solid color_blue 2px
+        width 70%
+        flex-shrink 50

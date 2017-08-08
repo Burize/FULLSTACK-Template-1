@@ -1,26 +1,26 @@
- @font-face {
-    font-family: "Myriad Pro";
-    src:  url('./Fonts/MyriadPro-lightsemiext.woff') format('woff'), 
+ @font-face 
+    font-family "Myriad Pro"
+    src   url('./Fonts/MyriadPro-lightsemiext.woff') format('woff'), 
           url('./Fonts/MyriadPro-lightsemiext.ttf')  format('truetype'),
-          url('./Fonts/MyriadPro-lightsemiext.svg#MyriadPro') format('svg');
-    font-style normal;
-    font-weight 300;
-   }
- @font-face {
-    font-family: "Myriad Pro";
-    src: url('./Fonts/MyriadPro-bold.woff') format('woff'), 
-         url('./Fonts/MyriadPro-bold.ttf')  format('truetype');
-    font-style normal;
-    font-weight 700;
-   }
+          url('./Fonts/MyriadPro-lightsemiext.svg#MyriadPro') format('svg')
+    font-style normal
+    font-weight 300
+    
+ @font-face 
+    font-family "Myriad Pro"
+    src  url('./Fonts/MyriadPro-bold.woff') format('woff'), 
+         url('./Fonts/MyriadPro-bold.ttf')  format('truetype'),
+         url('./Fonts/MyriadPro-bold.svg#MyriadPro') format('svg')
+    font-style normal
+    font-weight 700
 
- @font-face {
-    font-family: "Myriad Pro";
-    src: url('./Fonts/MyriadPro-Regular.woff') format('woff'), 
-         url('./Fonts/MyriadPro-Regular.ttf')  format('truetype');
-    font-style normal;
-    font-weight 500;
-   }
+ @font-face 
+    font-family "Myriad Pro"
+    src  url('./Fonts/MyriadPro-Regular.woff') format('woff'), 
+         url('./Fonts/MyriadPro-Regular.ttf')  format('truetype'),
+         url('./Fonts/MyriadPro-Regular.svg#MyriadPro') format('svg')
+    font-style normal
+    font-weight 500
    
 color_blue = #3d6cb0;
 color_gray = #e6e6e6;
@@ -32,198 +32,114 @@ color_gray = #e6e6e6;
 @import "./Software/software.styl"
 @import "./Point-list/point-list.styl"
 @import  "../title/title.styl"
-@import "../Icons/icon.styl"
 
 
-   
-
-
-
-
-   html, body{
-       margin 0;
-       padding 0;
-       padding-top 0.2em;
-       font-size 16px;
-       background-color white;
-       color black;
+   html, body
+       margin 0
+       padding 0
+       padding-top 0.2em
+       font-size 16px
+       background-color white
+       color black
        
-   }
 
    
-@media screen and (max-width: 1240px){
-    html, body{
+@media screen and (max-width: 1240px)
+    html, body
+        font-size 15px
         
-        font-size:15px !important;
-    }
-    
-    .container{
+        .container
+            width 1100px
+            
+@media screen and (max-width: 1120px)
+    html, body
+        font-size 13px
         
-        width: 1100;
-    }
-}
-
-
-
-@media screen and (max-width: 1120px){
-    html, body{
+        .container
+            width 1000px
+            
+@media screen and (max-width: 1020px)
+    html, body
+        font-size 12px
         
-        font-size:13px !important;
-    }
-    
-    .container{
+        .container
+            width 900px
+            
+@media screen and (max-width: 920px)
+    html, body
+        font-size 11px
         
-        width: 1000;
-    }
-}
-
-@media screen and (max-width: 1020px){
-    html, body{
+        .container
+            width 815px
+            
+@media screen and (max-width: 830px)
+    html, body
+        font-size 10px
         
-        font-size:12px !important;
-    }
-    
-    .container{
+        .container
+            width 730px
+            
+@media screen and (max-width: 750px)
+    html, body
+        font-size 8px
         
-        width: 900;
-    }
-}
-
-
-@media screen and (max-width: 920px){
-    html, body{
-        
-        font-size:11px !important;
-    }
-    
-    .container{
-        
-        width: 815;
-    }
-}
-
-
-@media screen and (max-width: 830px){
-    html, body{
-        
-        font-size:10px !important;
-    }
-    
-    .container{
-        
-        width: 730;
-    }
-}
-
-@media screen and (max-width: 750px){
-    html, body{
-        
-        font-size:9px !important;
-    }
-    
-    .container{
-        
-        width: 660;
-    }
-}
-
-@media screen and (max-width: 690px){
-    html, body{
-        
-        font-size:8px !important;
-    }
-    
-    .container{
-        
-        width: 610;
-    }
-}
+        .container
+            width 610px
    
-.container{
+
+.container
    
-    width 1220px;
-    margin: auto
-    margin-bottom 3em;
-     padding-top: 5.5%;
-    display flex;
-    justify-content space-between;
+    width 1220px
+    margin auto
+    margin-bottom 3em
+    padding-top 5.5%
+    display flex
+    justify-content space-between
     
-    .container-left{
-        width 40%;
+    .container-left
+        width 40%
         
+        .portrait
+            padding-top 3.5%
+            max-width 96%
+            margin-bottom 18%
+            font-size 3.58rem
         
-        .portrait{
-            padding-top: 3.5%;
-            max-width:96%;
-            margin-bottom 18%;
-            font-size 3.58rem;
-        }
 
-        .profile{
+        .profile
+            max-width: 92.5%
+            margin-bottom 11%
 
-            max-width: 92.5%;
-            margin-bottom 11%;
-        }
-
-        .contact{
-             max-width: 92.5%;
-              margin-bottom 7.5%;
+        .contact
+            max-width 92.5%
+            margin-bottom 7.5%
               
-              .contact-body{
-                  
-                  font-size 1.2rem
-              }
-             
-        }
+            .contact-body  
+                font-size 1.2rem
 
-        .skills{
-             max-width: 92.5%;
+        .skills
+            max-width 92.5%
              
-             .skills-body{
-                 
-                 font-size 1.2rem;
-             }
-        }
-    
-    }
+            .skills-body  
+                 font-size 1.2rem
     
     .container-right            
-    {
-        width 56.3%; 
+        width 56.3% 
         
-         .education{
-           
-            max-width 100%;
-            margin-bottom 8.5%;
-            font-size 1.05rem;
-        }
+        .education
+            max-width 100%
+            margin-bottom 8.5%
+            font-size 1.05rem
         
-        .experience{
+        .experience
+            margin-bottom 9%
+            font-size 1.05rem
             
-            margin-bottom 8%;
-            font-size 1.05rem;
+            .title
+                margin-bottom 1.05em
             
-            .title{
-                margin-bottom 1.05em;
-            }
-            
-            .point-list-row__title span{
-                
-                color black; 
-            }
-        }
+            .point-list-row__title span
+                color black
         
-        
-        .software-skills{
-            
-            font-size 1.75rem;
-        }
-
-       
-    }
-
-
-
-}
-
-
+        .software-skills
+            font-size 1.75rem

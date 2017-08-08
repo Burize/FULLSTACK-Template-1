@@ -1,43 +1,30 @@
-
-.skills .skills-body{
+.skills .skills-body
     
-    .skills-body-row{
+    .skills-body-row
         
-        .skills-body-row__text{
-            
-            text-align center;
-            font-family: "Myriad Pro", Arial, sans-serif;
-            font-style normal;
-            font-weight 500;
-            text-transform uppercase;
-            margin-bottom 0.25em;
-        }
+        &__text    
+            text-align center
+            font-family "Myriad Pro", Arial, sans-serif
+            font-style normal
+            font-weight 500
+            text-transform uppercase
+            margin-bottom 0.25em
         
-         .skills-body-row__points{
-                width 80%;
-                margin auto;
-                display flex;
-                justify-content space-around;
+        
+        &__points
+            width 80%
+            margin auto
+            display flex
+            justify-content space-around
                
-                
-                .skills-body-row__point{
+            .skills-body-row__point
+                width 5%
+                border-radius 100%
+                background-color color_gray
                     
-                    
-                    width 5%;
-                    border-radius 100%;
-                   background-color color_gray;
-                  .skills-body-row__point-inner{
-                      
-                    
-                    padding-top 100%;
+                &-inner
+                    padding-top 100%
                    
-                  }
-                }
-                
-                .skills-body-row__point_active{
-                     background-color color_blue;
-                }
-            }
-    }
- 
-}
+       
+            .skills-body-row__point_active
+                background-color color_blue

@@ -1,9 +1,7 @@
 include ./skill-points.pug
 article.skills
     header.title
-        include ../Icons/skills-icon.pug
-        h3.title__text skills
-        div.title__line
+        +Title('skills', './icons/lamp.svg')
     section.skills-body
         +Skill-points('creative', 9, 12)
         +Skill-points('teamwork', 11, 12)

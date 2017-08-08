@@ -1,9 +1,7 @@
 include ./contact-field.pug
 article.contact
     header.title
-        include ../Icons/phone-icon.pug
-        h3.title__text contact
-        div.title__line
+        +Title('contact', './icons/phone.svg')
     section.contact-body
         +Contact('address', 'Main Street, City.')
         +Contact('e-mail', 'contact@domain.com')

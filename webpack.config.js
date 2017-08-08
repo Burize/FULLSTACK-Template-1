@@ -11,14 +11,16 @@ module.exports = {
     entry: paths.source + 'index.js',
     output: {
         path: paths.build,
-        publicPath: './public/',
         filename: "[name].js"
+    },
+    devServer: {
+    publicPath: "/public"
     },
   
     plugins:[
         new HtmlWebpackPlugin({
             template: paths.source + 'index.pug',
-            filename: '../index.html'
+            filename: './index.html'
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
@@ -57,14 +59,9 @@ module.exports = {
                 exclude: [/node_modules/, /public/]
             },
             {
-                test: /\.(jpg|jpeg)$/,
-                loader: require.resolve("url-loader")
+                test: /\.(jpg|jpeg|png|gif)$/,
+                loader: 'url-loader?limit=30000&name=images/[name].[ext]' 
             },
-            {
-                test: /\.png$/,
-                loader: require.resolve("url-loader") 
-            },
-       
             {
                 test: /\.jsx$/,
                 loader: "babel-loader",
@@ -73,10 +70,8 @@ module.exports = {
          
          {
                test: /\.(eot|woff|woff2|ttf|otf|svg)$/,
-              exclude: /node_modules/,
-                loader: 'url-loader?limit=80000&name=[name].[ext]'  
+                loader: 'url-loader?limit=30000&name=fonts/[name].[ext]'  
             },
-         
             {
                 test: /\.json$/,
                 loader: "json-loader"
@@ -85,4 +80,3 @@ module.exports = {
         ]
     }
 }
-
